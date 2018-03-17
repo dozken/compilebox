@@ -33,3 +33,6 @@ pkg/
 
 #vim
 *.swp
+
+.idea
+build
