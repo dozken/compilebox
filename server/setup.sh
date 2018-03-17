@@ -8,6 +8,4 @@ git clone https://github.com/chekalskiy/compilebox /opt/compilebox
 
 cp /opt/compilebox/server/service_compilebox.conf /etc/init/service_compilebox.conf
 
-service service_compilebox restart
-
-ps aux | grep compilebox_linux
+reboot
