@@ -1,8 +1,0 @@
-{
-    "c++": {
-        "compiler": "g++ -o /usercode/a.out",
-        "sourceFile": "file.cpp",
-        "optionalExecutable": "/usercode/a.out",
-        "commentPrefix": "\/\/"
-    }
-}
