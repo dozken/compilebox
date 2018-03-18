@@ -1,7 +1,7 @@
 #!/bin/bash
 
 apt update
-apt install -y git upstart upstart-sysv
+apt install -y git upstart upstart-sysv docker.io
 
 cd /opt
 git clone https://github.com/chekalskiy/compilebox /opt/compilebox
