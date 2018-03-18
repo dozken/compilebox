@@ -8,4 +8,6 @@ git clone https://github.com/chekalskiy/compilebox /opt/compilebox
 
 cp /opt/compilebox/server/service_compilebox.conf /etc/init/service_compilebox.conf
 
+docker build -t virtual_machine /opt/bin
+
 reboot
