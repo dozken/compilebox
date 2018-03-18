@@ -92,7 +92,7 @@ func (s *Sandbox) execute() (string, error) {
 
 	dockerCommand := s.options.path + "/DockerTimeout.sh"
 
-	args := []string{fmt.Sprintf("%s", s.options.timeout), "-u", "mysql", "-i", "-t", "--volume=" + s.options.folder + ":/usercode", s.options.vm_name, "/usercode/script.sh", compiler, filename, optionalExecutable, flags}
+	args := []string{fmt.Sprintf("%s", s.options.timeout), "-u", "root", "-i", "-t", "--volume=" + s.options.folder + ":/usercode", s.options.vm_name, "/usercode/script.sh", compiler, filename, optionalExecutable, flags}
 
 	done := make(chan error)
 
