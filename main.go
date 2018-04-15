@@ -35,7 +35,7 @@ func main() {
 
 	languages := make(map[string]compilebox.Language, 0)
 	languages["c++"] = compilebox.Language{
-		Compiler: "g++ -o /usercode/a.out",
+		Compiler: "g++ -o /usercode/a.out -std=c++14 -Wall -fexceptions",
 		SourceFile: "file.cpp",
 		OptionalExecutable: "/usercode/a.out",
 		CommentPrefix: "//",
