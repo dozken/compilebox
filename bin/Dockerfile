@@ -3,9 +3,9 @@
 # Based on Ubuntu
 ############################################################
 
-FROM chug/ubuntu14.04x64
+FROM ubuntu:16.04
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty main universe" > /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu xenial main universe" > /etc/apt/sources.list
 RUN apt-get update
 
 #Install all the languages/compilers we are supporting.
