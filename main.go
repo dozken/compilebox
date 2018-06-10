@@ -41,6 +41,20 @@ func main() {
 		CommentPrefix: "//",
 	}
 
+	languages["c#"] = compilebox.Language{
+		Compiler: "gmcs",
+		SourceFile: "file.cs",
+		OptionalExecutable: "mono /usercode/file.exe",
+		CommentPrefix: "//",
+	}
+
+	languages["python"] = compilebox.Language{
+		Compiler: "python",
+		SourceFile: "file.py",
+		OptionalExecutable: "import sys\ninput = sys.stdin.read()\nargs = input.split('\\n')\n",
+		CommentPrefix: "#",
+	}
+
 	box = compilebox.New(languages)
 
 	http.HandleFunc("/languages/", getLangs)
