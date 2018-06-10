@@ -14,4 +14,4 @@ RUN apt install apt-transport-https
 RUN echo "deb https://download.mono-project.com/repo/ubuntu stable-xenial main" > /etc/apt/sources.list.d/mono-official-stable.list
 RUN apt update
 
-RUN apt install mono-devel mono-xsp4
+RUN apt install -y mono-devel mono-xsp4
