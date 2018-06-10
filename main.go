@@ -51,7 +51,7 @@ func main() {
 	languages["python"] = compilebox.Language{
 		Compiler: "python3",
 		SourceFile: "file.py",
-		OptionalExecutable: "import sys\ninput = sys.stdin.read()\nargs = input.split('\\n')\n",
+		OptionalExecutable: "",
 		CommentPrefix: "#",
 	}
 
