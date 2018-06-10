@@ -7,7 +7,7 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 RUN apt-get install -y gcc g++ gobjc curl sudo bc
-RUN apt-get install -y python build-essential libssl-dev libffi-dev python-dev
+RUN apt-get install -y python3 build-essential libssl-dev libffi-dev python3-dev
 
 # c#
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
