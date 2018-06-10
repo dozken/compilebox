@@ -42,7 +42,7 @@ func main() {
 	}
 
 	languages["c#"] = compilebox.Language{
-		Compiler: "gmcs",
+		Compiler: "dmcs",
 		SourceFile: "file.cs",
 		OptionalExecutable: "mono /usercode/file.exe",
 		CommentPrefix: "//",
