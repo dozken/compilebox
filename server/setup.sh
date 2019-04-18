@@ -15,6 +15,9 @@ apt-get install -y docker-ce docker-ce-cli containerd.io
 
 apt install -y git upstart upstart-sysv
 
+mkdir /sys/fs/cgroup/systemd
+mount -t cgroup -o none,name=systemd cgroup /sys/fs/cgroup/systemd
+
 cd /opt
 git clone https://github.com/chekalskiy/compilebox /opt/compilebox
 
