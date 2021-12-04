@@ -99,6 +99,7 @@ func evalCode(w http.ResponseWriter, r *http.Request) {
 		Message: msg,
 	}, "", "   ")
 
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(buf)
 }
@@ -123,6 +124,7 @@ func getLangs(w http.ResponseWriter, r *http.Request) {
 	buf, _ := json.MarshalIndent(workingLangs, "", "   ")
 
 	// write working language list back to client
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	w.Header().Set("Content-Type", "application/json")
 	w.Write(buf)
 }
